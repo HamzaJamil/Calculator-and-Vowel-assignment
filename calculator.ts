@@ -33,7 +33,7 @@ let answers = await inquirer.prompt([ // prompt to take inputs
     } else if(answers.calculation == 'Multiply'){
         console.log(`Multiplication Result:  ${answers.number1 * answers.number2} `);
     } else if(answers.calculation == 'Divide'){
-        console.log(`Divition Result:  ${answers.number1 / answers.number2} `);
+        console.log(`Division Result:  ${answers.number1 / answers.number2} `);
     } else if(answers.calculation == 'Modulus'){
         console.log(`Modulus Result:  ${answers.number1 % answers.number2} `);
 
@@ -53,19 +53,3 @@ let answers = await inquirer.prompt([ // prompt to take inputs
         option = 'n'
     }
 }while(option.toLowerCase() === "y") // check condition to repeat the process
-
-
-
-
-
-
-
-
-
-
-/* 
-validate(value) {
-    const valid = !isNaN(parseFloat(value));
-    return valid || 'Please enter a number';
-},
-filter: Number, */
