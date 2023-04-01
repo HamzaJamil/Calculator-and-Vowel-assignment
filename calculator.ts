@@ -52,4 +52,4 @@ let answers = await inquirer.prompt([ // prompt to take inputs
     } else {
         option = 'n'
     }
-}while(option.toLowerCase() === "y") // check condition to repeat the process
+}while(option.toLowerCase() === "y") // check condition to repeat the process.
